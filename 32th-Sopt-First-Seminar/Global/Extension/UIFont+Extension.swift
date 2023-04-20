@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum FontName: String {
+enum AppFontName: String {
     case pretendardBlack = "Pretendard-Black"
     case pretendardBold = "Pretendard-Bold"
     case pretendardExtraBold = "Pretendard-ExtraBold"
@@ -20,7 +20,35 @@ enum FontName: String {
 }
 
 extension UIFont {
-    static func font(_ style: FontName, ofSize size: CGFloat) -> UIFont {
+    static func font(_ style: AppFontName, ofSize size: CGFloat) -> UIFont {
         return UIFont(name: style.rawValue, size: size)!
+    }
+    
+    static var pretendardBlack: UIFont {
+        return font(.pretendardBlack, ofSize: 24)
+    }
+    static var pretendardBold: UIFont {
+        return font(.pretendardBold, ofSize: 20)
+    }
+    static var pretendardExtraBold: UIFont {
+        return font(.pretendardExtraBold, ofSize: 20)
+    }
+    static var pretendardExtraLight: UIFont {
+        return font(.pretendardExtraLight, ofSize: 16)
+    }
+    static var pretendardLight: UIFont {
+        return font(.pretendardLight, ofSize: 14)
+    }
+    static var pretendardMedium: UIFont {
+        return font(.pretendardMedium, ofSize: 23)
+    }
+    static var pretendardRegular: UIFont {
+        return font(.pretendardRegular, ofSize: 14)
+    }
+    static var pretendardSemiBold: UIFont {
+        return font(.pretendardSemiBold, ofSize: 14)
+    }
+    static var pretendardThin: UIFont {
+        return font(.pretendardThin, ofSize: 10)
     }
 }

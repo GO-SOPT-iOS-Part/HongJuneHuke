@@ -8,16 +8,17 @@
 import UIKit
 
 extension UIButton {
-    func canBeClicked(button: UIButton) {
-        button.backgroundColor = .tvingRed
-        button.layer.borderColor = UIColor.tvingRed.cgColor
-        button.setTitleColor(.white, for: .normal)
+    func canBeClicked() {
+        self.backgroundColor = .tvingRed
+        self.layer.borderWidth = 0
+        self.setTitleColor(.white, for: .normal)
     }
     
-    func cannotBeClicked(button: UIButton) {
-        button.backgroundColor = .black
-        button.layer.borderColor = UIColor.tvingGray4.cgColor
-        button.setTitleColor(.tvingGray2, for: .normal)
+    func cannotBeClicked() {
+        self.backgroundColor = .black
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.tvingGray4.cgColor
+        self.setTitleColor(.tvingGray2, for: .normal)
     }
     
     func setUnderline() {

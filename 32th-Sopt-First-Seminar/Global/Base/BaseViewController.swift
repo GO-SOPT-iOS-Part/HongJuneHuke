@@ -20,12 +20,7 @@ class BaseViewController: UIViewController {
         setupNavigationPopGesture()
         setupNavigationBar()
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-//        NotificationCenter.default.removeObserver(self)
-    }
-    
+
     func render() {
         
     }

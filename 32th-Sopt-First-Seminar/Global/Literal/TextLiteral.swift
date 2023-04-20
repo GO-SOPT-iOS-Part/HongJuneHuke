@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum TextLitera {
+enum TextLiteral {
     
     // MARK: - SignIn label text
     
@@ -16,6 +16,7 @@ enum TextLitera {
     static let passwordLabelText: String = "비밀번호"
     static let isThereNoIdLabel: String = "아직 계정이 없으신가요?"
     static let makeNameModalHeadLabel: String = "닉네임을 입력해주세요"
+    static let splitLabel: String = "|"
     
     // MARK: - SignIn Button text
     

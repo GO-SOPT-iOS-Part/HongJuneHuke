@@ -20,6 +20,16 @@
 		919B017529F11D8E00B79435 /* TextLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B017429F11D8E00B79435 /* TextLiteral.swift */; };
 		919B017929F1218F00B79435 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B017829F1218F00B79435 /* SignInView.swift */; };
 		919B017C29F121BB00B79435 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 919B017B29F121BB00B79435 /* SnapKit */; };
+		919B017E29F1299000B79435 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B017D29F1299000B79435 /* UIStackView+Extension.swift */; };
+		919B019329F17D3600B79435 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B018A29F17D3600B79435 /* Pretendard-Black.otf */; };
+		919B019429F17D3600B79435 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B018B29F17D3600B79435 /* Pretendard-ExtraBold.otf */; };
+		919B019529F17D3600B79435 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B018C29F17D3600B79435 /* Pretendard-Thin.otf */; };
+		919B019629F17D3600B79435 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B018D29F17D3600B79435 /* Pretendard-ExtraLight.otf */; };
+		919B019729F17D3600B79435 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B018E29F17D3600B79435 /* Pretendard-Medium.otf */; };
+		919B019829F17D3600B79435 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B018F29F17D3600B79435 /* Pretendard-Bold.otf */; };
+		919B019929F17D3600B79435 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B019029F17D3600B79435 /* Pretendard-SemiBold.otf */; };
+		919B019A29F17D3600B79435 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B019129F17D3600B79435 /* Pretendard-Light.otf */; };
+		919B019B29F17D3600B79435 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B019229F17D3600B79435 /* Pretendard-Regular.otf */; };
 		919DCFFD29D7F84900324D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919DCFFC29D7F84900324D03 /* AppDelegate.swift */; };
 		919DCFFF29D7F84900324D03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919DCFFE29D7F84900324D03 /* SceneDelegate.swift */; };
 		919DD00629D7F84B00324D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919DD00529D7F84B00324D03 /* Assets.xcassets */; };
@@ -39,6 +49,16 @@
 		919B016D29F119BE00B79435 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		919B017429F11D8E00B79435 /* TextLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLiteral.swift; sourceTree = "<group>"; };
 		919B017829F1218F00B79435 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		919B017D29F1299000B79435 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		919B018A29F17D3600B79435 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		919B018B29F17D3600B79435 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		919B018C29F17D3600B79435 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		919B018D29F17D3600B79435 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		919B018E29F17D3600B79435 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		919B018F29F17D3600B79435 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		919B019029F17D3600B79435 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		919B019129F17D3600B79435 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		919B019229F17D3600B79435 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		919DCFF929D7F84900324D03 /* 32th-Sopt-First-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "32th-Sopt-First-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		919DCFFC29D7F84900324D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		919DCFFE29D7F84900324D03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +88,7 @@
 				919B016729F1191C00B79435 /* UIView+Extension.swift */,
 				919B016129F1161C00B79435 /* UIColor+Extension.swift */,
 				919B016529F118DE00B79435 /* UIFont+Extension.swift */,
+				919B017D29F1299000B79435 /* UIStackView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -103,6 +124,7 @@
 		919B017329F11D6D00B79435 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				919B018929F17D1100B79435 /* UIFonts */,
 				919DD00529D7F84B00324D03 /* Assets.xcassets */,
 				919DD00729D7F84B00324D03 /* LaunchScreen.storyboard */,
 			);
@@ -128,6 +150,22 @@
 				919B017829F1218F00B79435 /* SignInView.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		919B018929F17D1100B79435 /* UIFonts */ = {
+			isa = PBXGroup;
+			children = (
+				919B018A29F17D3600B79435 /* Pretendard-Black.otf */,
+				919B018F29F17D3600B79435 /* Pretendard-Bold.otf */,
+				919B018B29F17D3600B79435 /* Pretendard-ExtraBold.otf */,
+				919B018D29F17D3600B79435 /* Pretendard-ExtraLight.otf */,
+				919B019129F17D3600B79435 /* Pretendard-Light.otf */,
+				919B018E29F17D3600B79435 /* Pretendard-Medium.otf */,
+				919B019229F17D3600B79435 /* Pretendard-Regular.otf */,
+				919B019029F17D3600B79435 /* Pretendard-SemiBold.otf */,
+				919B018C29F17D3600B79435 /* Pretendard-Thin.otf */,
+			);
+			path = UIFonts;
 			sourceTree = "<group>";
 		};
 		919DCFF029D7F84900324D03 = {
@@ -219,7 +257,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919B019729F17D3600B79435 /* Pretendard-Medium.otf in Resources */,
+				919B019829F17D3600B79435 /* Pretendard-Bold.otf in Resources */,
+				919B019629F17D3600B79435 /* Pretendard-ExtraLight.otf in Resources */,
+				919B019A29F17D3600B79435 /* Pretendard-Light.otf in Resources */,
 				919DD00929D7F84B00324D03 /* LaunchScreen.storyboard in Resources */,
+				919B019529F17D3600B79435 /* Pretendard-Thin.otf in Resources */,
+				919B019329F17D3600B79435 /* Pretendard-Black.otf in Resources */,
+				919B019929F17D3600B79435 /* Pretendard-SemiBold.otf in Resources */,
+				919B019B29F17D3600B79435 /* Pretendard-Regular.otf in Resources */,
+				919B019429F17D3600B79435 /* Pretendard-ExtraBold.otf in Resources */,
 				919DD00629D7F84B00324D03 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +286,7 @@
 				919B016429F1166E00B79435 /* ImageLiteral.swift in Sources */,
 				919B016E29F119BE00B79435 /* UIButton+Extension.swift in Sources */,
 				919B016229F1161C00B79435 /* UIColor+Extension.swift in Sources */,
+				919B017E29F1299000B79435 /* UIStackView+Extension.swift in Sources */,
 				919B017929F1218F00B79435 /* SignInView.swift in Sources */,
 				919B016A29F1195200B79435 /* UITextField+Extension.swift in Sources */,
 				919B016829F1191C00B79435 /* UIView+Extension.swift in Sources */,
