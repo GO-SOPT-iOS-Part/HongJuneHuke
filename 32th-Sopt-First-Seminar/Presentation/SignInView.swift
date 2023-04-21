@@ -9,7 +9,7 @@ import UIKit
 
 import SnapKit
 
-class SignInView: BaseUIView {
+final class SignInView: BaseUIView {
     
     // MARK: - property
     
@@ -22,11 +22,13 @@ class SignInView: BaseUIView {
         return label
     }()
     
-    private let idTextField: UITextField = {
+    let idTextField: UITextField = {
         let textField = UITextField()
+        textField.textColor = .tvingGray2
         textField.backgroundColor = .tvingGray4
         textField.setLeftPadding(amount: 22)
         textField.layer.cornerRadius = 3
+        textField.font = UIFont.pretendardMedium
         textField.attributedPlaceholder = NSAttributedString(
             string: TextLiteral.idLabelText,
             attributes: [NSAttributedString.Key.foregroundColor : UIColor.tvingGray2]
@@ -34,11 +36,35 @@ class SignInView: BaseUIView {
         return textField
     }()
     
-    private let passwordTextField: UITextField = {
+    let clearButton: UIButton = {
+        let button = UIButton()
+        button.setImage(ImageLiteral.xCircle, for: .normal)
+        button.isHidden = true
+        return button
+    }()
+    
+    let secureButton: UIButton = {
+        let button = UIButton()
+        button.setImage(ImageLiteral.slashEye, for: .normal)
+        button.isHidden = true
+        return button
+    }()
+    
+    let nonSecureButton: UIButton = {
+        let button = UIButton()
+        button.setImage(ImageLiteral.noSlashEye, for: .normal)
+        button.isHidden = true
+        return button
+    }()
+    
+    let passwordTextField: UITextField = {
         let textField = UITextField()
+        textField.textColor = .tvingGray2
         textField.backgroundColor = .tvingGray4
         textField.setLeftPadding(amount: 22)
         textField.layer.cornerRadius = 3
+        textField.font = UIFont.pretendardMedium
+        textField.isSecureTextEntry = true
         textField.attributedPlaceholder = NSAttributedString(
             string: TextLiteral.passwordLabelText,
             attributes: [NSAttributedString.Key.foregroundColor : UIColor.tvingGray2]
@@ -46,7 +72,7 @@ class SignInView: BaseUIView {
         return textField
     }()
     
-    private let signInButton: UIButton = {
+    let signInButton: UIButton = {
         let button = UIButton()
         button.cannotBeClicked()
         button.setTitle(TextLiteral.signInButtonText, for: .normal)
@@ -54,7 +80,7 @@ class SignInView: BaseUIView {
         return button
     }()
     
-    private let findIdButton: UIButton = {
+    let findIdButton: UIButton = {
         let button = UIButton()
         button.setTitle(TextLiteral.findIdButtonText, for: .normal)
         button.setTitleColor(.tvingGray2, for: .normal)
@@ -84,7 +110,7 @@ class SignInView: BaseUIView {
         return label
     }()
     
-    private let makeNameButton: UIButton = {
+    let makeNameButton: UIButton = {
         let button = UIButton()
         button.setTitle(TextLiteral.makeNameButtonText, for: .normal)
         button.setTitleColor(.tvingGray2, for: .normal)
@@ -132,6 +158,27 @@ class SignInView: BaseUIView {
             findButtonStackView,
             makeIdButtonStackView
         )
+        
+        passwordTextField.addSubviews(
+            clearButton,
+            secureButton,
+            nonSecureButton
+        )
+        
+        clearButton.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(45)
+        }
+        
+        secureButton.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.leading.equalTo(clearButton.snp.trailing).offset(10)
+        }
+        
+        nonSecureButton.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.leading.equalTo(clearButton.snp.trailing).offset(10)
+        }
         
         signInHeadLabel.snp.makeConstraints {
             $0.top.equalToSuperview().offset(120)

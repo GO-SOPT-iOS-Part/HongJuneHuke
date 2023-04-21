@@ -13,4 +13,8 @@ extension String {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: self)
     }
+
+    func isValidPassword() -> Bool {
+         return !self.isEmpty
+     }
 }

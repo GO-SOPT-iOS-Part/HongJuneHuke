@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916DD4BD29F266C600B0D6E6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916DD4BC29F266C600B0D6E6 /* WelcomeViewController.swift */; };
+		916DD4C329F2B77900B0D6E6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916DD4C229F2B77900B0D6E6 /* WelcomeView.swift */; };
 		919B015C29F1156400B79435 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B015B29F1156400B79435 /* SignInViewController.swift */; };
 		919B015E29F115A400B79435 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B015D29F115A400B79435 /* BaseViewController.swift */; };
 		919B016029F115F600B79435 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B015F29F115F600B79435 /* BaseUIView.swift */; };
@@ -30,6 +32,10 @@
 		919B019929F17D3600B79435 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B019029F17D3600B79435 /* Pretendard-SemiBold.otf */; };
 		919B019A29F17D3600B79435 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B019129F17D3600B79435 /* Pretendard-Light.otf */; };
 		919B019B29F17D3600B79435 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 919B019229F17D3600B79435 /* Pretendard-Regular.otf */; };
+		919B019E29F17F6400B79435 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B019D29F17F6400B79435 /* BackButton.swift */; };
+		919B01AE29F1850A00B79435 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 919B01AD29F1850A00B79435 /* RxCocoa */; };
+		919B01B029F1850A00B79435 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 919B01AF29F1850A00B79435 /* RxRelay */; };
+		919B01B229F1850A00B79435 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 919B01B129F1850A00B79435 /* RxSwift */; };
 		919DCFFD29D7F84900324D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919DCFFC29D7F84900324D03 /* AppDelegate.swift */; };
 		919DCFFF29D7F84900324D03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919DCFFE29D7F84900324D03 /* SceneDelegate.swift */; };
 		919DD00629D7F84B00324D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 919DD00529D7F84B00324D03 /* Assets.xcassets */; };
@@ -37,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		916DD4BC29F266C600B0D6E6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		916DD4C229F2B77900B0D6E6 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		919B015B29F1156400B79435 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		919B015D29F115A400B79435 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		919B015F29F115F600B79435 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
@@ -59,6 +67,7 @@
 		919B019029F17D3600B79435 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		919B019129F17D3600B79435 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
 		919B019229F17D3600B79435 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		919B019D29F17F6400B79435 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		919DCFF929D7F84900324D03 /* 32th-Sopt-First-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "32th-Sopt-First-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		919DCFFC29D7F84900324D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		919DCFFE29D7F84900324D03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919B01B029F1850A00B79435 /* RxRelay in Frameworks */,
+				919B01AE29F1850A00B79435 /* RxCocoa in Frameworks */,
+				919B01B229F1850A00B79435 /* RxSwift in Frameworks */,
 				919B017C29F121BB00B79435 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +146,7 @@
 		919B017629F11FDE00B79435 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				919B019C29F17F5200B79435 /* UIComponent */,
 				919B016F29F11D1600B79435 /* Extension */,
 				919B017029F11D3800B79435 /* Literal */,
 				919B017129F11D4600B79435 /* Base */,
@@ -148,6 +161,8 @@
 			children = (
 				919B015B29F1156400B79435 /* SignInViewController.swift */,
 				919B017829F1218F00B79435 /* SignInView.swift */,
+				916DD4BC29F266C600B0D6E6 /* WelcomeViewController.swift */,
+				916DD4C229F2B77900B0D6E6 /* WelcomeView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -166,6 +181,14 @@
 				919B018C29F17D3600B79435 /* Pretendard-Thin.otf */,
 			);
 			path = UIFonts;
+			sourceTree = "<group>";
+		};
+		919B019C29F17F5200B79435 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				919B019D29F17F6400B79435 /* BackButton.swift */,
+			);
+			path = UIComponent;
 			sourceTree = "<group>";
 		};
 		919DCFF029D7F84900324D03 = {
@@ -211,6 +234,9 @@
 			name = "32th-Sopt-First-Seminar";
 			packageProductDependencies = (
 				919B017B29F121BB00B79435 /* SnapKit */,
+				919B01AD29F1850A00B79435 /* RxCocoa */,
+				919B01AF29F1850A00B79435 /* RxRelay */,
+				919B01B129F1850A00B79435 /* RxSwift */,
 			);
 			productName = "32th-Sopt-First-Seminar";
 			productReference = 919DCFF929D7F84900324D03 /* 32th-Sopt-First-Seminar.app */;
@@ -242,6 +268,7 @@
 			mainGroup = 919DCFF029D7F84900324D03;
 			packageReferences = (
 				919B017A29F121BB00B79435 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				919B01AC29F1850A00B79435 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 919DCFFA29D7F84900324D03 /* Products */;
 			projectDirPath = "";
@@ -286,9 +313,12 @@
 				919B016429F1166E00B79435 /* ImageLiteral.swift in Sources */,
 				919B016E29F119BE00B79435 /* UIButton+Extension.swift in Sources */,
 				919B016229F1161C00B79435 /* UIColor+Extension.swift in Sources */,
+				919B019E29F17F6400B79435 /* BackButton.swift in Sources */,
+				916DD4BD29F266C600B0D6E6 /* WelcomeViewController.swift in Sources */,
 				919B017E29F1299000B79435 /* UIStackView+Extension.swift in Sources */,
 				919B017929F1218F00B79435 /* SignInView.swift in Sources */,
 				919B016A29F1195200B79435 /* UITextField+Extension.swift in Sources */,
+				916DD4C329F2B77900B0D6E6 /* WelcomeView.swift in Sources */,
 				919B016829F1191C00B79435 /* UIView+Extension.swift in Sources */,
 				919DCFFF29D7F84900324D03 /* SceneDelegate.swift in Sources */,
 				919B016629F118DE00B79435 /* UIFont+Extension.swift in Sources */,
@@ -510,6 +540,14 @@
 				kind = branch;
 			};
 		};
+		919B01AC29F1850A00B79435 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -517,6 +555,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 919B017A29F121BB00B79435 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		919B01AD29F1850A00B79435 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 919B01AC29F1850A00B79435 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		919B01AF29F1850A00B79435 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 919B01AC29F1850A00B79435 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		919B01B129F1850A00B79435 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 919B01AC29F1850A00B79435 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

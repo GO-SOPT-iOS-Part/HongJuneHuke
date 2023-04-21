@@ -26,4 +26,7 @@ enum TextLiteral {
     static let makeNameButtonText: String = "닉네임 만들러가기"
     static let saveNameButtonText: String = "저장하기"
     
+    // MARK: - Welcome View
+    
+    static let goMainButtonText: String = "메인으로"
 }

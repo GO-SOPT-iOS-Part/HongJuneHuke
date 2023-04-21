@@ -11,12 +11,14 @@ extension UIButton {
     func canBeClicked() {
         self.backgroundColor = .tvingRed
         self.layer.borderWidth = 0
+        self.isEnabled = true
         self.setTitleColor(.white, for: .normal)
     }
     
     func cannotBeClicked() {
         self.backgroundColor = .black
         self.layer.borderWidth = 1
+        self.isEnabled = false
         self.layer.borderColor = UIColor.tvingGray4.cgColor
         self.setTitleColor(.tvingGray2, for: .normal)
     }
