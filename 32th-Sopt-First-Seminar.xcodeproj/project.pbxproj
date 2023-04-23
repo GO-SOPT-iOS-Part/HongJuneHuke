@@ -9,15 +9,7 @@
 /* Begin PBXBuildFile section */
 		9112079129F3A88B004450B6 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112079029F3A88B004450B6 /* CommonView.swift */; };
 		9112079329F3A945004450B6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112079229F3A945004450B6 /* SecondViewController.swift */; };
-		9112079C29F3B518004450B6 /* Carrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112079B29F3B518004450B6 /* Carrot.swift */; };
-		9112079E29F3B551004450B6 /* CarrotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112079D29F3B551004450B6 /* CarrotViewController.swift */; };
-		911207A029F3B5F5004450B6 /* CarrotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112079F29F3B5F5004450B6 /* CarrotTableViewCell.swift */; };
-		911207A229F3B60F004450B6 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207A129F3B60F004450B6 /* Trade.swift */; };
 		911207A529F3B761004450B6 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 911207A429F3B761004450B6 /* Then */; };
-		911207A729F3B856004450B6 /* SecoondBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207A629F3B856004450B6 /* SecoondBaseViewController.swift */; };
-		911207A929F3BFC0004450B6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207A829F3BFBF004450B6 /* Photo.swift */; };
-		911207AB29F3C0B2004450B6 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207AA29F3C0B2004450B6 /* PhotoViewController.swift */; };
-		911207AD29F3C0BE004450B6 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207AC29F3C0BE004450B6 /* PhotoCell.swift */; };
 		911207AF29F52D94004450B6 /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207AE29F52D94004450B6 /* SignInUseCase.swift */; };
 		911207B129F52DE4004450B6 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207B029F52DE4004450B6 /* SignInViewModel.swift */; };
 		911207B329F5378D004450B6 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207B229F5378D004450B6 /* ModuleFactory.swift */; };
@@ -59,14 +51,6 @@
 /* Begin PBXFileReference section */
 		9112079029F3A88B004450B6 /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		9112079229F3A945004450B6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		9112079B29F3B518004450B6 /* Carrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrot.swift; sourceTree = "<group>"; };
-		9112079D29F3B551004450B6 /* CarrotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotViewController.swift; sourceTree = "<group>"; };
-		9112079F29F3B5F5004450B6 /* CarrotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotTableViewCell.swift; sourceTree = "<group>"; };
-		911207A129F3B60F004450B6 /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
-		911207A629F3B856004450B6 /* SecoondBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecoondBaseViewController.swift; sourceTree = "<group>"; };
-		911207A829F3BFBF004450B6 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		911207AA29F3C0B2004450B6 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
-		911207AC29F3C0BE004450B6 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		911207AE29F52D94004450B6 /* SignInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
 		911207B029F52DE4004450B6 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		911207B229F5378D004450B6 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
@@ -119,21 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9112079A29F3B502004450B6 /* Week3 */ = {
-			isa = PBXGroup;
-			children = (
-				9112079B29F3B518004450B6 /* Carrot.swift */,
-				9112079D29F3B551004450B6 /* CarrotViewController.swift */,
-				9112079F29F3B5F5004450B6 /* CarrotTableViewCell.swift */,
-				911207A129F3B60F004450B6 /* Trade.swift */,
-				911207A629F3B856004450B6 /* SecoondBaseViewController.swift */,
-				911207A829F3BFBF004450B6 /* Photo.swift */,
-				911207AA29F3C0B2004450B6 /* PhotoViewController.swift */,
-				911207AC29F3C0BE004450B6 /* PhotoCell.swift */,
-			);
-			path = Week3;
-			sourceTree = "<group>";
-		};
 		911207B429F53993004450B6 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,7 +233,6 @@
 		919DCFF029D7F84900324D03 = {
 			isa = PBXGroup;
 			children = (
-				9112079A29F3B502004450B6 /* Week3 */,
 				919DCFFB29D7F84900324D03 /* 32th-Sopt-First-Seminar */,
 				919DCFFA29D7F84900324D03 /* Products */,
 			);
@@ -380,15 +348,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				911207AD29F3C0BE004450B6 /* PhotoCell.swift in Sources */,
 				911207AF29F52D94004450B6 /* SignInUseCase.swift in Sources */,
 				919B016029F115F600B79435 /* BaseUIView.swift in Sources */,
-				9112079C29F3B518004450B6 /* Carrot.swift in Sources */,
 				919B016C29F1197700B79435 /* String+Extension.swift in Sources */,
 				919B017529F11D8E00B79435 /* TextLiteral.swift in Sources */,
 				919DCFFD29D7F84900324D03 /* AppDelegate.swift in Sources */,
 				919B015E29F115A400B79435 /* BaseViewController.swift in Sources */,
-				911207A929F3BFC0004450B6 /* Photo.swift in Sources */,
 				919B016429F1166E00B79435 /* ImageLiteral.swift in Sources */,
 				919B016E29F119BE00B79435 /* UIButton+Extension.swift in Sources */,
 				919B016229F1161C00B79435 /* UIColor+Extension.swift in Sources */,
@@ -396,10 +361,7 @@
 				919B019E29F17F6400B79435 /* BackButton.swift in Sources */,
 				911207B329F5378D004450B6 /* ModuleFactory.swift in Sources */,
 				911207B129F52DE4004450B6 /* SignInViewModel.swift in Sources */,
-				9112079E29F3B551004450B6 /* CarrotViewController.swift in Sources */,
-				911207A029F3B5F5004450B6 /* CarrotTableViewCell.swift in Sources */,
 				916DD4BD29F266C600B0D6E6 /* WelcomeViewController.swift in Sources */,
-				911207A229F3B60F004450B6 /* Trade.swift in Sources */,
 				919B017E29F1299000B79435 /* UIStackView+Extension.swift in Sources */,
 				919B017929F1218F00B79435 /* SignInView.swift in Sources */,
 				919B016A29F1195200B79435 /* UITextField+Extension.swift in Sources */,
@@ -407,8 +369,6 @@
 				9112079129F3A88B004450B6 /* CommonView.swift in Sources */,
 				919B016829F1191C00B79435 /* UIView+Extension.swift in Sources */,
 				919DCFFF29D7F84900324D03 /* SceneDelegate.swift in Sources */,
-				911207AB29F3C0B2004450B6 /* PhotoViewController.swift in Sources */,
-				911207A729F3B856004450B6 /* SecoondBaseViewController.swift in Sources */,
 				919B016629F118DE00B79435 /* UIFont+Extension.swift in Sources */,
 				919B015C29F1156400B79435 /* SignInViewController.swift in Sources */,
 			);
