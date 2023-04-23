@@ -11,15 +11,12 @@ import SnapKit
 
 final class SignInViewController: BaseViewController {
 
-    private var signInViewModel: SignInViewModel?
-    private var userEmail: String?
-    
     // MARK: - property
     
     private let signInView = SignInView()
     private let backButton = BackButton(type: .system)
-    private var isEmailValid = false
-    private var isPasswordValid = false
+    private var signInViewModel: SignInViewModel?
+    private var userEmail: String?
 
     // MARK: - View Life Cycle
     
