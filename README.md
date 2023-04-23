@@ -1,4 +1,4 @@
-## HongJuneHuke 32기 솝트 과제 레포
+## HongJuneHuke 32기 SOPT 과제 레포
 
 ### MVVM + Clean Architecture 구조 사용
 
