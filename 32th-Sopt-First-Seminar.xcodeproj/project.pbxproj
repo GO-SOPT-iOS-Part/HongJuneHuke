@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9112079129F3A88B004450B6 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112079029F3A88B004450B6 /* CommonView.swift */; };
-		9112079329F3A945004450B6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112079229F3A945004450B6 /* SecondViewController.swift */; };
 		911207A529F3B761004450B6 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 911207A429F3B761004450B6 /* Then */; };
 		911207AF29F52D94004450B6 /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207AE29F52D94004450B6 /* SignInUseCase.swift */; };
 		911207B129F52DE4004450B6 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207B029F52DE4004450B6 /* SignInViewModel.swift */; };
@@ -49,8 +47,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9112079029F3A88B004450B6 /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
-		9112079229F3A945004450B6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		911207AE29F52D94004450B6 /* SignInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
 		911207B029F52DE4004450B6 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		911207B229F5378D004450B6 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
@@ -251,8 +247,6 @@
 			children = (
 				919B017729F120EA00B79435 /* Presentation */,
 				919B017629F11FDE00B79435 /* Global */,
-				9112079029F3A88B004450B6 /* CommonView.swift */,
-				9112079229F3A945004450B6 /* SecondViewController.swift */,
 			);
 			path = "32th-Sopt-First-Seminar";
 			sourceTree = "<group>";
@@ -357,7 +351,6 @@
 				919B016429F1166E00B79435 /* ImageLiteral.swift in Sources */,
 				919B016E29F119BE00B79435 /* UIButton+Extension.swift in Sources */,
 				919B016229F1161C00B79435 /* UIColor+Extension.swift in Sources */,
-				9112079329F3A945004450B6 /* SecondViewController.swift in Sources */,
 				919B019E29F17F6400B79435 /* BackButton.swift in Sources */,
 				911207B329F5378D004450B6 /* ModuleFactory.swift in Sources */,
 				911207B129F52DE4004450B6 /* SignInViewModel.swift in Sources */,
@@ -366,7 +359,6 @@
 				919B017929F1218F00B79435 /* SignInView.swift in Sources */,
 				919B016A29F1195200B79435 /* UITextField+Extension.swift in Sources */,
 				916DD4C329F2B77900B0D6E6 /* WelcomeView.swift in Sources */,
-				9112079129F3A88B004450B6 /* CommonView.swift in Sources */,
 				919B016829F1191C00B79435 /* UIView+Extension.swift in Sources */,
 				919DCFFF29D7F84900324D03 /* SceneDelegate.swift in Sources */,
 				919B016629F118DE00B79435 /* UIFont+Extension.swift in Sources */,
