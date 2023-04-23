@@ -11,7 +11,7 @@ import SnapKit
 
 final class SignInViewController: BaseViewController {
 
-    private var signInViewModel: SignInViewModel
+    private var signInViewModel: SignInViewModel?
     private var userEmail: String?
     
     // MARK: - property
@@ -24,7 +24,7 @@ final class SignInViewController: BaseViewController {
     // MARK: - View Life Cycle
     
     init(viewModel: LoginViewModel) {
-        self.signInViewModel = viewModel as! SignInViewModel
+        self.signInViewModel = viewModel as? SignInViewModel
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -62,7 +62,7 @@ final class SignInViewController: BaseViewController {
     }
 
     private func bind() {
-        self.signInViewModel.isLoginButtonEnableUpdated = { [weak self] isEnable in
+        self.signInViewModel?.isLoginButtonEnableUpdated = { [weak self] isEnable in
             self?.signInView.signInButton.isUserInteractionEnabled = isEnable
             if isEnable {
                 self?.signInView.signInButton.canBeClicked()
@@ -104,14 +104,14 @@ extension SignInViewController {
     @objc func emailDidChange(noti: NSNotification) {
         if let text = signInView.idTextField.text {
             self.userEmail = text
-            self.signInViewModel.emailText(email: text)
+            self.signInViewModel?.emailText(email: text)
         }
     }
     
     @objc func passwordDidChange(noti: NSNotification) {
         if let text = signInView.passwordTextField.text {
             self.userEmail = text
-            self.signInViewModel.passwordText(password: text)
+            self.signInViewModel?.passwordText(password: text)
         }
     }
 }
