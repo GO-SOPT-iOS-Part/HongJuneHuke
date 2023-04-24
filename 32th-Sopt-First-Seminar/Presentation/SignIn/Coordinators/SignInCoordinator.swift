@@ -4,9 +4,28 @@
 //
 //  Created by 홍준혁 on 2023/04/24.
 //
-
+//
 import UIKit
 
-final class SignInCoordinator: BaseCoordinator {
+final class SignInCoordinator: Coordinator {
     
+    var childCoordinators: [Coordinator] = []
+    
+    private var navigationController: UINavigationController!
+    
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+    
+    func start() {
+        let signInUsecase = DefaultSignInUseCase()
+        let signInViewModel = SignInViewModel(useCase: signInUsecase)
+        let viewController = SignInViewController(viewModel: signInViewModel, coordinator: self)
+        self.navigationController.viewControllers = [viewController]
+    }
+    
+    func startWelcomeView() {
+        let coordinator = WelcomeCoordinator(navigationController: navigationController)
+        coordinator.start()
+    }
 }

@@ -10,6 +10,6 @@ import UIKit
 protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     func start()
-    func start(childCoordinator: Coordinator)
-    func didFinish(childCoordinator: Coordinator)
+//    func start(childCoordinator: Coordinator)
+//    func didFinish(childCoordinator: Coordinator)
 }

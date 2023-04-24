@@ -7,30 +7,22 @@
 
 import UIKit
 
-import RxSwift
-
 final class AppCoordinator: Coordinator {
-
-    let window: UIWindow
-    var childCoordinators: [Coordinator]
-
-    init(window: UIWindow) {
-        self.window = window
-        self.childCoordinators = []
-    }
-
+    
+    var childCoordinators: [Coordinator] = []
+    private var navigationController: UINavigationController!
+    
     func start() {
-        let loginViewController = ModuleFactory.shared.makeLoginViewController()
-        window.rootViewController = loginViewController
-        window.makeKeyAndVisible()
+        showSignInViewController()
     }
     
-    func start(childCoordinator: Coordinator) {
-        self.childCoordinators = [childCoordinator]
-        childCoordinator.start()
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
     }
-
-    func didFinish(childCoordinator: Coordinator) {
-        removeChildCoordinator(childCoordinator)
+    
+    private func showSignInViewController() {
+        let signInCoordinator = SignInCoordinator(navigationController: navigationController)
+        signInCoordinator.start()
+        childCoordinators.append(signInCoordinator)
     }
 }
