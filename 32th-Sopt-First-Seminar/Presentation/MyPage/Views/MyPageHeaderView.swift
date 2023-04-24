@@ -11,8 +11,6 @@ import SnapKit
 
 final class MyPageHeaderView: BaseUIView {
     
-    static let identifier = "MyPageHeaderView"
-    
     // MARK: - property
     
     private let contentView = UIView()

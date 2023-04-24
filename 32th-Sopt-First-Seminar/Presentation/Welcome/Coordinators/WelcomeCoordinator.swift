@@ -13,8 +13,9 @@ final class WelcomeCoordinator: BaseCoordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    // MARK: - HomeView 개발 전까지는 마이페이지 뷰로 연결
     func didTapMainButton() {
-        let coordinator = HomeViewCoordinator(navigationController: navigationController)
+        let coordinator = MyPageCoordinator(navigationController: navigationController)
         start(childCoordinator: coordinator)
     }
 }

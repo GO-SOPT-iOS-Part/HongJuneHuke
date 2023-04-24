@@ -9,7 +9,7 @@ import UIKit
 
 import SnapKit
 
-class WelcomeViewController: BaseViewController {
+final class WelcomeViewController: BaseViewController {
     
     private let welcomeView = WelcomeView()
     private var welcomeCoordinator: WelcomeCoordinator?
