@@ -15,4 +15,9 @@ extension Coordinator {
     public func removeChildCoordinator(_ childCoordinator: Coordinator) {
         self.childCoordinators = self.childCoordinators.filter { $0 !== childCoordinator }
     }
+    
+    public func removeAllChildCoordinators() {
+        childCoordinators.forEach { $0.removeChildCoordinators() }
+        childCoordinators.removeAll()
+    }
 }

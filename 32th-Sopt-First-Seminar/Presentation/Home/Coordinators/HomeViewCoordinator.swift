@@ -7,18 +7,18 @@
 
 import UIKit
 
-final class HomeViewCoordinator: Coordinator {
+final class HomeViewCoordinator: BaseCoordinator {
 
-    var childCoordinators: [Coordinator] = []
-
-    private var navigationController: UINavigationController!
+//    var childCoordinators: [Coordinator] = []
+//
+//    private var navigationController: UINavigationController!
+//
+//    init(navigationController: UINavigationController) {
+//        self.navigationController = navigationController
+//    }
     
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-    }
-    
-    func start() {
+    override func start() {
         let viewController = HomeViewController()
-        self.navigationController.pushViewController(viewController, animated: true)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

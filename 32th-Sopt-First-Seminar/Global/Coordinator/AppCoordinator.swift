@@ -25,4 +25,8 @@ final class AppCoordinator: Coordinator {
         signInCoordinator.start()
         childCoordinators.append(signInCoordinator)
     }
+    
+    func start(childCoordinator: Coordinator) {}
+    func didFinish(childCoordinator: Coordinator) {}
+    func removeChildCoordinators() {}
 }

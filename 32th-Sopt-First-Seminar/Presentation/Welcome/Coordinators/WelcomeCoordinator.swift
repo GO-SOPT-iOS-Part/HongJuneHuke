@@ -7,23 +7,24 @@
 
 import UIKit
 
-final class WelcomeCoordinator: Coordinator {
+final class WelcomeCoordinator: BaseCoordinator {
 
-    var childCoordinators: [Coordinator] = []
-
-    private var navigationController: UINavigationController!
+//    var childCoordinators: [Coordinator] = []
+//
+//    private var navigationController: UINavigationController!
     
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-    }
+//    init(navigationController: UINavigationController) {
+//        self.navigationController = navigationController
+//    }
     
-    func start() {
+    override func start() {
         let viewController = WelcomeViewController(coordinator: self)
-        self.navigationController.pushViewController(viewController, animated: true)
+        navigationController.pushViewController(viewController, animated: true)
     }
     
     func didTapMainButton() {
         let coordinator = HomeViewCoordinator(navigationController: navigationController)
-        coordinator.start()
+        //        coordinator.start()
+        start(childCoordinator: coordinator)
     }
 }

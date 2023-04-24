@@ -7,25 +7,25 @@
 //
 import UIKit
 
-final class SignInCoordinator: Coordinator {
+final class SignInCoordinator: BaseCoordinator {
     
-    var childCoordinators: [Coordinator] = []
+//    var childCoordinators: [Coordinator] = []
+//
+//    private var navigationController: UINavigationController!
+//
+//    init(navigationController: UINavigationController) {
+//        self.navigationController = navigationController
+//    }
     
-    private var navigationController: UINavigationController!
-    
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-    }
-    
-    func start() {
+    override func start() {
         let signInUsecase = DefaultSignInUseCase()
         let signInViewModel = SignInViewModel(useCase: signInUsecase)
         let viewController = SignInViewController(viewModel: signInViewModel, coordinator: self)
-        self.navigationController.viewControllers = [viewController]
+        navigationController.viewControllers = [viewController]
     }
     
     func startWelcomeView() {
         let coordinator = WelcomeCoordinator(navigationController: navigationController)
-        coordinator.start()
+        start(childCoordinator: coordinator)
     }
 }
