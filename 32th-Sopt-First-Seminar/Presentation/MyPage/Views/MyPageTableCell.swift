@@ -29,16 +29,25 @@ final class MyPageTableCell: BaseTableViewCell {
 
     // MARK: - life cycle
     
+    override func configUI() {
+        self.backgroundColor = .black
+    }
+    
     override func render() {
-        
         self.addSubviews(
             cellLabel,
             cellChevron
         )
         
         cellLabel.snp.makeConstraints {
-            
+            $0.centerY.equalToSuperview()
+            $0.leading.equalToSuperview().offset(18)
+        }
+        
+        cellChevron.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(18)
+            $0.height.width.equalTo(17)
         }
     }
-    
 }

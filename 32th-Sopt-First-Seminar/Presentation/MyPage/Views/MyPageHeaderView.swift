@@ -9,12 +9,14 @@ import UIKit
 
 import SnapKit
 
-final class MyPageHeaderView: UITableViewHeaderFooterView {
+final class MyPageHeaderView: BaseUIView {
     
     static let identifier = "MyPageHeaderView"
     
     // MARK: - property
     
+    private let contentView = UIView()
+
     private let userImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = ImageLiteral.bearIcon
@@ -113,17 +115,7 @@ final class MyPageHeaderView: UITableViewHeaderFooterView {
         return button
     }()
     
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
-        render()
-    }
-    
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func render() {
+    override func render() {
         ticketCoinGrayView.addSubviews(
             ticketImageView,
             ticketLabel,
@@ -138,7 +130,7 @@ final class MyPageHeaderView: UITableViewHeaderFooterView {
             moreDetailButton
         )
         
-        self.addSubviews(
+        contentView.addSubviews(
             userImageView,
             nameTextLabel,
             profileChangeButton,
@@ -146,10 +138,16 @@ final class MyPageHeaderView: UITableViewHeaderFooterView {
             bottomGrayView
         )
         
+        self.addSubview(contentView)
+        
         // MARK: - View
+        
+        contentView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     
         userImageView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(123)
+            $0.top.equalToSuperview().offset(20)
             $0.leading.equalToSuperview().offset(24)
             $0.height.equalTo(74)
             $0.width.equalTo(72)
@@ -164,7 +162,6 @@ final class MyPageHeaderView: UITableViewHeaderFooterView {
             $0.centerY.equalTo(userImageView)
             $0.trailing.equalToSuperview().inset(23)
             $0.height.equalTo(25)
-            $0.width.equalTo(70)
         }
         
         ticketCoinGrayView.snp.makeConstraints {
@@ -226,6 +223,5 @@ final class MyPageHeaderView: UITableViewHeaderFooterView {
             $0.height.width.equalTo(17)
             $0.trailing.equalToSuperview().inset(13)
         }
-        
     }
 }
