@@ -29,4 +29,14 @@ enum TextLiteral {
     // MARK: - Welcome View
     
     static let goMainButtonText: String = "메인으로"
+    
+    // MARK: - Mypage View
+    
+    static let userName: String = "Doosan"
+    static let profileChangeButtonText: String = "프로필 전환"
+    static let ticketLabel: String = "나의 이용권"
+    static let ticketStatusLabel: String = "사용중인 이용권이 없습니다."
+    static let coinLabel: String = "티빙 캐시"
+    static let coinStatusLabel: String = "0"
+    static let moreDetailLabel: String = "SDLKAFKLSDFNKLNSDAFKLNKLNSADLKFNKLDSANFKLNASDFKLNKLASNF"
 }
