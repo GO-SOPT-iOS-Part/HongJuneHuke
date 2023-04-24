@@ -8,15 +8,6 @@
 import UIKit
 
 final class SignInCoordinator: BaseCoordinator {
-    
-//    var childCoordinators: [Coordinator] = []
-//
-//    private var navigationController: UINavigationController!
-//
-//    init(navigationController: UINavigationController) {
-//        self.navigationController = navigationController
-//    }
-    
     override func start() {
         let signInUsecase = DefaultSignInUseCase()
         let signInViewModel = SignInViewModel(useCase: signInUsecase)
