@@ -12,9 +12,9 @@ import SnapKit
 final class WelcomeViewController: BaseViewController {
     
     private let welcomeView = WelcomeView()
-    private var welcomeViewModel: WelcomeViewModel?
+    private let welcomeViewModel: WelcomeViewModel?
     
-    var userEmail: String? {
+    private var userEmail: String? {
         didSet {
             if let userEmail = userEmail {
                 welcomeView.welcomeText.text = userEmail + " 님\n반가워요!"
