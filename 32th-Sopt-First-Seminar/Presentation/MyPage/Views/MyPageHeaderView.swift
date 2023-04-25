@@ -18,6 +18,7 @@ final class MyPageHeaderView: BaseUIView {
     private let userImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = ImageLiteral.bearIcon
+        imageView.layer.cornerRadius = 15
         return imageView
     }()
     
@@ -99,10 +100,21 @@ final class MyPageHeaderView: BaseUIView {
     
     private let moreDetailLabel: UILabel = {
         let label = UILabel()
+        let firstAttributedString = NSMutableAttributedString(string: TextLiteral.firstAttributedString)
+        let firstImageAttachment = NSTextAttachment()
+        firstImageAttachment.image = ImageLiteral.tvingIcon
+        firstImageAttachment.bounds = CGRect(x: 0, y: 0, width: 25, height: 10)
+        firstAttributedString.append(NSAttributedString(attachment: firstImageAttachment))
+        
+        let secondAttributedString = NSMutableAttributedString(string: TextLiteral.secondAttributedString)
+        firstAttributedString.append(secondAttributedString)
+        let thirdAttributedString = NSMutableAttributedString(string: TextLiteral.thirdAttributedString)
+        firstAttributedString.append(thirdAttributedString)
+        
+        label.attributedText = firstAttributedString
         label.numberOfLines = 2
         label.textAlignment = .center
         label.font = UIFont.pretendardSemiBold
-        label.text = TextLiteral.moreDetailLabel
         label.textColor = .tvingGray2
         return label
     }()

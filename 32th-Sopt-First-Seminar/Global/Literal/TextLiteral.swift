@@ -38,7 +38,9 @@ enum TextLiteral {
     static let ticketStatusLabel: String = "사용중인 이용권이 없습니다."
     static let coinLabel: String = "티빙 캐시"
     static let coinStatusLabel: String = "0"
-    static let moreDetailLabel: String = "SDLKAFKLSDFNKLNSDAFKLNKLNSADLKFNKLDSANFKLNASDFKLNKLASNF"
+    static let firstAttributedString: String = "이용권을 구매하고 "
+    static let secondAttributedString: String = " 등 인기 TV 프로그램과\n"
+    static let thirdAttributedString: String = "다양한 영화 콘텐츠를 자유롭게 시청하세요!"
     static let tableViewFirstSectionTextArray: [String] = [
         "이용권",
         "1:1 문의내역",

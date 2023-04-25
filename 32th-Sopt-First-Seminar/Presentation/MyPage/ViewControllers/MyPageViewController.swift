@@ -56,5 +56,12 @@ final class MyPageViewController: BaseViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.leftBarButtonItem = backButton
+        
+        let alertButton = UIBarButtonItem(image: ImageLiteral.navigationAlertButton, style: .plain, target: self, action: #selector(navigationAction))
+        let settingButton = UIBarButtonItem(image: ImageLiteral.navigationSettingButton, style: .plain, target: self, action: #selector(navigationAction))
+        navigationItem.setRightBarButtonItems([alertButton, settingButton], animated: true)
     }
+    
+    @objc
+    private func navigationAction() {}
 }

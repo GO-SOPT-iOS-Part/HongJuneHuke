@@ -281,9 +281,9 @@
 		911207F329F6E1D4004450B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				911207F629F6F3C3004450B6 /* MyPageTableCell.swift */,
 				9112080229F70D02004450B6 /* MyPageTableView.swift */,
 				911207F429F6E909004450B6 /* MyPageHeaderView.swift */,
-				911207F629F6F3C3004450B6 /* MyPageTableCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

@@ -29,6 +29,8 @@ enum ImageLiteral {
     static var coinIcon: UIImage { .load(name: "CoinIcon") }
     static var ticketIcon: UIImage { .load(name: "UsingIcon") }
     static var detailButton: UIImage { .load(name: "detailButton") }
+    static var navigationAlertButton: UIImage { .load(name: "AlertIcon") }
+    static var navigationSettingButton: UIImage { .load(name: "SettingIcon") }
 }
 
 extension UIImage {
