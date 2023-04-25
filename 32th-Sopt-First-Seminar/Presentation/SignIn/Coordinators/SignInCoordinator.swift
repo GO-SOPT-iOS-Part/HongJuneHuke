@@ -16,8 +16,9 @@ final class SignInCoordinator: BaseCoordinator {
         navigationController.viewControllers = [viewController]
     }
     
-    func startWelcomeView() {
+    func startWelcomeView(userEmail: String) {
         let coordinator = WelcomeCoordinator(navigationController: navigationController)
+        coordinator.userEmail = userEmail
         start(childCoordinator: coordinator)
     }
 }

@@ -21,8 +21,6 @@ final class SignInViewController: BaseViewController {
     // MARK: - View Life Cycle
     
     init(viewModel: SignInViewModel) {
-        
-        // MARK: - ?
         self.signInViewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

@@ -34,6 +34,7 @@ final class WelcomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setButtonAction()
+        bind()
     }
 
     override func render() {
@@ -47,6 +48,12 @@ final class WelcomeViewController: BaseViewController {
     
     override func setupNavigationBar() {
         self.navigationItem.hidesBackButton = true
+    }
+    
+    private func bind() {
+        self.welcomeViewModel?.updateUserEmail = { [weak self] email in
+            self?.userEmail = email
+        }
     }
 }
 

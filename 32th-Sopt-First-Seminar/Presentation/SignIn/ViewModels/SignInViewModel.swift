@@ -60,6 +60,8 @@ extension SignInViewModel {
     }
     
     func signInButtonDidTap() {
-        signInCoordinatore?.startWelcomeView()
+        if let validUserEmail = validUserEmail {
+            signInCoordinatore?.startWelcomeView(userEmail: validUserEmail)
+        }
     }
 }

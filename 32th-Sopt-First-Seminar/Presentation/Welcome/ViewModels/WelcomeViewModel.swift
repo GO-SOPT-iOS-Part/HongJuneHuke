@@ -11,12 +11,25 @@ protocol WelcomeViewModelInput {
     func goMainButtonDidTap()
 }
 
-final class WelcomeViewModel: WelcomeViewModelInput {
+protocol WelcomeViewModelOutput {
+    var updateUserEmail: ((String) -> Void)? { get set }
+}
+
+protocol WelcomeViewModelInputOutput: WelcomeViewModelInput, WelcomeViewModelOutput {}
+
+final class WelcomeViewModel: WelcomeViewModelInputOutput {
+
+    // MARK: - Output
     
     private var welcomeCoordinator: WelcomeCoordinator?
     
-    init(coordinator: WelcomeCoordinator) {
+    var updateUserEmail: ((String) -> Void)?
+    
+    init(coordinator: WelcomeCoordinator, userEmail: String) {
         self.welcomeCoordinator = coordinator
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+            self?.updateUserEmail?(userEmail)
+        }
     }
 }
 

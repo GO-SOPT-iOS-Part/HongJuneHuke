@@ -8,8 +8,16 @@
 import UIKit
 
 final class WelcomeCoordinator: BaseCoordinator {
+    
+    var userEmail: String?
+    
+    override init(navigationController: UINavigationController) {
+        super.init(navigationController: navigationController)
+    }
+    
     override func start() {
-        let welcomeViewModel = WelcomeViewModel(coordinator: self)
+        guard let userEmail = userEmail else { return }
+        let welcomeViewModel = WelcomeViewModel(coordinator: self, userEmail: userEmail)
         let viewController = WelcomeViewController(viewModel: welcomeViewModel)
         navigationController.pushViewController(viewController, animated: true)
     }
