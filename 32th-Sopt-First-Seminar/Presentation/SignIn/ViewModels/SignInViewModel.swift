@@ -10,6 +10,7 @@ import Foundation
 protocol SignInViewModelInput {
     func emailText(email: String)
     func passwordText(password: String)
+    func signInButtonDidTap()
 }
 
 protocol SignInViewModelOutput {
@@ -30,10 +31,14 @@ final class SignInViewModel: LoginViewModel {
     }
     private var isValidEmail = false
     private var isValidPassword = false
-    private let useCase: SignInUseCase
+    private var validUserEmail: String?
     
-    init(useCase: SignInUseCase) {
+    private let useCase: SignInUseCase
+    private var signInCoordinatore: SignInCoordinator?
+    
+    init(useCase: SignInUseCase, coordinator: SignInCoordinator) {
         self.useCase = useCase
+        self.signInCoordinatore = coordinator
     }
 }
 
@@ -44,10 +49,17 @@ extension SignInViewModel {
     func emailText(email: String) {
         isValidEmail = useCase.checkIsValidEmail(email: email)
         isLoginButtonEnable = isValidEmail && isValidPassword
+        if isValidEmail {
+            validUserEmail = email
+        }
     }
     
     func passwordText(password: String) {
         isValidPassword = useCase.checkIsValidPassword(password: password)
         isLoginButtonEnable = isValidEmail && isValidPassword
+    }
+    
+    func signInButtonDidTap() {
+        signInCoordinatore?.startWelcomeView()
     }
 }

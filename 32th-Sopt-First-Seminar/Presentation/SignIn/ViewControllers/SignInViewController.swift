@@ -17,13 +17,13 @@ final class SignInViewController: BaseViewController {
     private let backButton = BackButton(type: .system)
     private var signInViewModel: SignInViewModel?
     private var userEmail: String?
-    private var signInCoordinatore: SignInCoordinator?
 
     // MARK: - View Life Cycle
     
-    init(viewModel: LoginViewModel, coordinator: SignInCoordinator) {
-        self.signInViewModel = viewModel as? SignInViewModel
-        self.signInCoordinatore = coordinator
+    init(viewModel: SignInViewModel) {
+        
+        // MARK: - ?
+        self.signInViewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -77,14 +77,10 @@ final class SignInViewController: BaseViewController {
 extension SignInViewController {
     private func setButtonAction() {
         let loginButtonAction = UIAction { [weak self] _ in
-            self?.login()
+            self?.signInViewModel?.signInButtonDidTap()
         }
 
         signInView.signInButton.addAction(loginButtonAction, for: .touchUpInside)
-    }
-    
-    func login() {
-        self.signInCoordinatore?.startWelcomeView()
     }
 }
 

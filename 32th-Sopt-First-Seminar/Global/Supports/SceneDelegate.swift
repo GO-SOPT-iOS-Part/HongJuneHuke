@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         coordinator.start()
 
         self.window?.makeKeyAndVisible()
-//
+
 //        guard let windowScene = (scene as? UIWindowScene) else { return }
 //        // 2.
 //        self.window = UIWindow(windowScene: windowScene)

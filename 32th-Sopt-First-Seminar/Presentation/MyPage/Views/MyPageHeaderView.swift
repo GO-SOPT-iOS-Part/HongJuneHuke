@@ -153,9 +153,10 @@ final class MyPageHeaderView: BaseUIView {
         // MARK: - View
         
         contentView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.width.equalTo(UIScreen.main.bounds.width)
+            $0.centerX.equalToSuperview()
         }
-    
+        
         userImageView.snp.makeConstraints {
             $0.top.equalToSuperview().offset(20)
             $0.leading.equalToSuperview().offset(24)

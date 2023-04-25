@@ -11,8 +11,8 @@ import UIKit
 final class SignInCoordinator: BaseCoordinator {
     override func start() {
         let signInUsecase = DefaultSignInUseCase()
-        let signInViewModel = SignInViewModel(useCase: signInUsecase)
-        let viewController = SignInViewController(viewModel: signInViewModel, coordinator: self)
+        let signInViewModel = SignInViewModel(useCase: signInUsecase, coordinator: self)
+        let viewController = SignInViewController(viewModel: signInViewModel)
         navigationController.viewControllers = [viewController]
     }
     

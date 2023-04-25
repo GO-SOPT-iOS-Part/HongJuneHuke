@@ -25,6 +25,8 @@
 		911207F929F6F404004450B6 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911207F829F6F404004450B6 /* BaseTableViewCell.swift */; };
 		9112080329F70D02004450B6 /* MyPageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112080229F70D02004450B6 /* MyPageTableView.swift */; };
 		9112080529F719A6004450B6 /* MyPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112080429F719A6004450B6 /* MyPageCoordinator.swift */; };
+		912E4BBB29F7FFFC00638AE2 /* MyPageFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912E4BBA29F7FFFC00638AE2 /* MyPageFooterView.swift */; };
+		912E4BC329F8172900638AE2 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912E4BC229F8172900638AE2 /* WelcomeViewModel.swift */; };
 		916DD4BD29F266C600B0D6E6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916DD4BC29F266C600B0D6E6 /* WelcomeViewController.swift */; };
 		916DD4C329F2B77900B0D6E6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916DD4C229F2B77900B0D6E6 /* WelcomeView.swift */; };
 		919B015C29F1156400B79435 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B015B29F1156400B79435 /* SignInViewController.swift */; };
@@ -75,6 +77,8 @@
 		911207F829F6F404004450B6 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		9112080229F70D02004450B6 /* MyPageTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableView.swift; sourceTree = "<group>"; };
 		9112080429F719A6004450B6 /* MyPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCoordinator.swift; sourceTree = "<group>"; };
+		912E4BBA29F7FFFC00638AE2 /* MyPageFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageFooterView.swift; sourceTree = "<group>"; };
+		912E4BC229F8172900638AE2 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		916DD4BC29F266C600B0D6E6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		916DD4C229F2B77900B0D6E6 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		919B015B29F1156400B79435 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				911207E629F697C4004450B6 /* Views */,
+				912E4BC429F819C300638AE2 /* ViewModels */,
 				911207E529F697AC004450B6 /* ViewControllers */,
 				911207E729F697CE004450B6 /* Coordinators */,
 			);
@@ -281,9 +286,10 @@
 		911207F329F6E1D4004450B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				911207F629F6F3C3004450B6 /* MyPageTableCell.swift */,
 				9112080229F70D02004450B6 /* MyPageTableView.swift */,
+				911207F629F6F3C3004450B6 /* MyPageTableCell.swift */,
 				911207F429F6E909004450B6 /* MyPageHeaderView.swift */,
+				912E4BBA29F7FFFC00638AE2 /* MyPageFooterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +300,14 @@
 				9112080429F719A6004450B6 /* MyPageCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		912E4BC429F819C300638AE2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				912E4BC229F8172900638AE2 /* WelcomeViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		919B016F29F11D1600B79435 /* Extension */ = {
@@ -511,11 +525,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				911207E429F6962F004450B6 /* HomeViewCoordinator.swift in Sources */,
+				912E4BC329F8172900638AE2 /* WelcomeViewModel.swift in Sources */,
 				911207AF29F52D94004450B6 /* SignInUseCase.swift in Sources */,
 				919B016029F115F600B79435 /* BaseUIView.swift in Sources */,
 				911207DC29F5AC35004450B6 /* WelcomeCoordinator.swift in Sources */,
 				911207C429F58EE7004450B6 /* Coordinator+Extension.swift in Sources */,
 				911207C629F58F13004450B6 /* NavigationCoordinator.swift in Sources */,
+				912E4BBB29F7FFFC00638AE2 /* MyPageFooterView.swift in Sources */,
 				919B016C29F1197700B79435 /* String+Extension.swift in Sources */,
 				919B017529F11D8E00B79435 /* TextLiteral.swift in Sources */,
 				919DCFFD29D7F84900324D03 /* AppDelegate.swift in Sources */,

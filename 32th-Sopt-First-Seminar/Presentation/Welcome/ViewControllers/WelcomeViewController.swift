@@ -12,7 +12,8 @@ import SnapKit
 final class WelcomeViewController: BaseViewController {
     
     private let welcomeView = WelcomeView()
-    private var welcomeCoordinator: WelcomeCoordinator?
+    private var welcomeViewModel: WelcomeViewModel?
+    
     var userEmail: String? {
         didSet {
             if let userEmail = userEmail {
@@ -21,8 +22,8 @@ final class WelcomeViewController: BaseViewController {
         }
     }
     
-    init(coordinator: WelcomeCoordinator) {
-        self.welcomeCoordinator = coordinator
+    init(viewModel: WelcomeViewModel) {
+        self.welcomeViewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -54,13 +55,9 @@ final class WelcomeViewController: BaseViewController {
 extension WelcomeViewController {
     private func setButtonAction() {
         let mainButtonAction = UIAction { [weak self] _ in
-            self?.mainButtonAction()
+            self?.welcomeViewModel?.goMainButtonDidTap()
         }
 
         welcomeView.goMainButton.addAction(mainButtonAction, for: .touchUpInside)
-    }
-    
-    func mainButtonAction() {
-        self.welcomeCoordinator?.didTapMainButton()
     }
 }
