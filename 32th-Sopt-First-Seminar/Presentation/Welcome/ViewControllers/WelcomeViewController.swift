@@ -12,7 +12,7 @@ import SnapKit
 final class WelcomeViewController: BaseViewController {
     
     private let welcomeView = WelcomeView()
-    private let welcomeViewModel: WelcomeViewModel?
+    private var welcomeViewModel: WelcomeViewModelInputOutput?
     
     private var userEmail: String? {
         didSet {
@@ -25,27 +25,17 @@ final class WelcomeViewController: BaseViewController {
     init(viewModel: WelcomeViewModel) {
         self.welcomeViewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        bind()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setButtonAction()
-        bind()
+    override func setView() {
+        self.view = welcomeView
     }
 
-    override func render() {
-        
-        view.addSubview(welcomeView)
-        
-        welcomeView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
-        }
-    }
-    
     override func setupNavigationBar() {
         self.navigationItem.hidesBackButton = true
     }
@@ -54,6 +44,7 @@ final class WelcomeViewController: BaseViewController {
         self.welcomeViewModel?.updateUserEmail = { [weak self] email in
             self?.userEmail = email
         }
+        setButtonAction()
     }
 }
 

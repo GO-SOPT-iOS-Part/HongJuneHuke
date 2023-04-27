@@ -29,10 +29,6 @@ final class MyPageTableCell: BaseTableViewCell {
 
     // MARK: - life cycle
     
-    override func configUI() {
-        self.backgroundColor = .black
-    }
-    
     override func render() {
         self.addSubviews(
             cellLabel,

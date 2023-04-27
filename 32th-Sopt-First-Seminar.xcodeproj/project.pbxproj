@@ -129,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				911207CC29F5904C004450B6 /* Views */,
-				911207CB29F59044004450B6 /* UseCases */,
 				911207CF29F59076004450B6 /* ViewModels */,
 				911207CD29F5905F004450B6 /* ViewControllers */,
 				911207CE29F5906D004450B6 /* Coordinators */,
@@ -175,14 +174,6 @@
 				911207C529F58F13004450B6 /* NavigationCoordinator.swift */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		911207CB29F59044004450B6 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				911207AE29F52D94004450B6 /* SignInUseCase.swift */,
-			);
-			path = UseCases;
 			sourceTree = "<group>";
 		};
 		911207CC29F5904C004450B6 /* Views */ = {
@@ -431,10 +422,35 @@
 		919DCFFB29D7F84900324D03 /* 32th-Sopt-First-Seminar */ = {
 			isa = PBXGroup;
 			children = (
+				91E17B2329FA8C31000CFA16 /* Domain */,
 				919B017729F120EA00B79435 /* Presentation */,
 				919B017629F11FDE00B79435 /* Global */,
 			);
 			path = "32th-Sopt-First-Seminar";
+			sourceTree = "<group>";
+		};
+		91E17B2329FA8C31000CFA16 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				91E17B2529FA8EC5000CFA16 /* Usecase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		91E17B2429FA8C3D000CFA16 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				911207AE29F52D94004450B6 /* SignInUseCase.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		91E17B2529FA8EC5000CFA16 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				91E17B2429FA8C3D000CFA16 /* SignIn */,
+			);
+			path = Usecase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

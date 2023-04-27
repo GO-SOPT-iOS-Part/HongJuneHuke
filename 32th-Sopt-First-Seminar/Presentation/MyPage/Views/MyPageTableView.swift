@@ -30,7 +30,7 @@ final class MyPageTableView: UITableView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-    
+
     private func setupTableView() {
         register(MyPageTableCell.self, forCellReuseIdentifier: MyPageTableCell.cellId)
         dataSource = self

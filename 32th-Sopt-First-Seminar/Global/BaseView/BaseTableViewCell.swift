@@ -28,6 +28,6 @@ class BaseTableViewCell: UITableViewCell {
     }
     
     func configUI() {
-        // Override ConfigUI
+        self.backgroundColor = .black
     }
 }

@@ -24,16 +24,8 @@ final class MyPageViewController: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func render() {
-        view.addSubview(myPageTableView)
-        
-        myPageTableView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
-        }
-    }
-    
-    override func configUI() {
-        view.backgroundColor = .black
+     override func setView() {
+        self.view = myPageTableView
     }
     
     override func setupNavigationBar() {
