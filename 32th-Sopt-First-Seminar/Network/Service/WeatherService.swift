@@ -17,11 +17,10 @@ final class WeatherService {
     
     func getWeatherAPI(
         location: String,
-        appid: String,
         completion: @escaping (NetworkResult<Any>) -> Void
     ) {
         
-        let url = Config.baseURL + "/weather?q=\(location)&appid=\(appid)"
+        let url = "BASEURL" + "/weather?q=\(location)&appid=APPID"
         let header: HTTPHeaders = ["Content-Type" : "application/json"]
 
         print(url)
@@ -37,27 +36,24 @@ final class WeatherService {
                 guard let value = response.value else { return }
                 let networkResult = self.judgeStatus(by: statusCode, value)
                 completion(networkResult)
-                
             case .failure:
-                completion(.networkErr)
+                completion(.networkFail)
             }
         }
     }
     
     private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
-        case 201: return isValidData(data: data)
+        case 200: return isValidData(data: data)
         case 400, 409: return isValidData(data: data)
         case 500: return .serverErr
-        default: return .networkErr
+        default: return .serverErr
         }
     }
     
     private func isValidData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        
         guard let decodedData = try? decoder.decode(WeatherReponse.self, from: data) else { return .pathErr }
-        
         return .success(decodedData as Any)
     }
 }

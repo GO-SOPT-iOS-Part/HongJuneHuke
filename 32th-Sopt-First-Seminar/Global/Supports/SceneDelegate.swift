@@ -14,8 +14,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-        let loginVC = ModuleFactory.shared.makeLoginViewController()
-        let navigationController = UINavigationController(rootViewController: loginVC)
+//        let loginVC = ModuleFactory.shared.makeLoginViewController()
+        let weatherViewModel = WeatherViewModel()
+        let navigationController = UINavigationController(rootViewController: WeatherViewController(viewModel: weatherViewModel))
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
     }
