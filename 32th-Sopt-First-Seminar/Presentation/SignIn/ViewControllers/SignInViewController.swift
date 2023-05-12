@@ -15,37 +15,22 @@ final class SignInViewController: BaseViewController {
     
     private let signInView = SignInView()
     private let backButton = BackButton(type: .system)
-    private var signInViewModel: SignInViewModel?
-    private var userEmail: String?
+    private var signInViewModel: LoginViewModel?
 
     // MARK: - View Life Cycle
     
-    init(viewModel: LoginViewModel) {
-        self.signInViewModel = viewModel as? SignInViewModel
+    init(viewModel: SignInViewModel) {
+        self.signInViewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        bind()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setButtonAction()
-        bind()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        setupNotificationCenter()
-    }
-    
-    override func render() {
-        
-        view.addSubview(signInView)
-        
-        signInView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
-        }
+
+    override func setView() {
+        self.view = signInView
     }
 
     override func setupNavigationBar() {
@@ -67,25 +52,20 @@ final class SignInViewController: BaseViewController {
                 self?.signInView.signInButton.cannotBeClicked()
             }
         }
+        setButtonAction()
+        setupNotificationCenter()
     }
 }
 
 // MARK: - set button action
 
 extension SignInViewController {
-    
     private func setButtonAction() {
-        let moveToWelcomeViewAction = UIAction { [weak self] _ in
-            self?.moveToWelcomeView()
+        let loginButtonAction = UIAction { [weak self] _ in
+            self?.signInViewModel?.signInButtonDidTap()
         }
 
-        signInView.signInButton.addAction(moveToWelcomeViewAction, for: .touchUpInside)
-    }
-    
-    private func moveToWelcomeView() {
-        let welcomeViewController = WelcomeViewController()
-        welcomeViewController.userEmail = self.userEmail
-        self.navigationController?.pushViewController(welcomeViewController, animated: true)
+        signInView.signInButton.addAction(loginButtonAction, for: .touchUpInside)
     }
 }
 
@@ -100,14 +80,12 @@ extension SignInViewController {
     
     @objc func emailDidChange(noti: NSNotification) {
         if let text = signInView.idTextField.text {
-            self.userEmail = text
             self.signInViewModel?.emailText(email: text)
         }
     }
     
     @objc func passwordDidChange(noti: NSNotification) {
         if let text = signInView.passwordTextField.text {
-            self.userEmail = text
             self.signInViewModel?.passwordText(password: text)
         }
     }

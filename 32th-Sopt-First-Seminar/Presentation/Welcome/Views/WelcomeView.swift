@@ -61,8 +61,4 @@ final class WelcomeView: BaseUIView {
             $0.bottom.equalToSuperview().inset(70)
         }
     }
-    
-    override func configUI() {
-        self.backgroundColor = .black
-    }
 }

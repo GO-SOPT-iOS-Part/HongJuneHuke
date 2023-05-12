@@ -13,7 +13,6 @@ protocol SignInUseCase {
 }
 
 final class DefaultSignInUseCase: SignInUseCase {
-    
     func checkIsValidEmail(email: String) -> Bool {
         return email.isValidEmail()
     }

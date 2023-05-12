@@ -24,6 +24,6 @@ class BaseUIView: UIView {
     }
     
     func configUI() {
-        
+        self.backgroundColor = .black
     }
 }

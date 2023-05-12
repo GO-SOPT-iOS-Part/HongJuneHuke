@@ -15,18 +15,13 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        render()
-        configUI()
+        setView()
         setupNavigationPopGesture()
         setupNavigationBar()
     }
-
-    func render() {
-        
-    }
     
-    func configUI() {
-        view.backgroundColor = .white
+    func setView() {
+        
     }
     
     // MARK: - helper func

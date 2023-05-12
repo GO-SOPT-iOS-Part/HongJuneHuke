@@ -215,8 +215,4 @@ final class SignInView: BaseUIView {
             $0.height.equalTo(22)
         }
     }
-    
-    override func configUI() {
-        self.backgroundColor = .black
-    }
 }
