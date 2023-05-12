@@ -29,4 +29,30 @@ enum TextLiteral {
     // MARK: - Welcome View
     
     static let goMainButtonText: String = "메인으로"
+    
+    // MARK: - Mypage View
+    
+    static let userName: String = "Doosan"
+    static let profileChangeButtonText: String = "프로필 전환"
+    static let ticketLabel: String = "나의 이용권"
+    static let ticketStatusLabel: String = "사용중인 이용권이 없습니다."
+    static let coinLabel: String = "티빙 캐시"
+    static let coinStatusLabel: String = "0"
+    static let firstAttributedString: String = "이용권을 구매하고 "
+    static let secondAttributedString: String = " 등 인기 TV 프로그램과\n"
+    static let thirdAttributedString: String = "다양한 영화 콘텐츠를 자유롭게 시청하세요!"
+    static let tableViewFirstSectionTextArray: [String] = [
+        "이용권",
+        "1:1 문의내역",
+        "예약알림",
+        "회원정보 수정",
+        "프로모션 정보 수신 동의"
+    ]
+    static let tableViewSecoondSectionTextArray: [String] = [
+        "공지사항",
+        "이벤트",
+        "고객센터",
+        "티빙 알아보기"
+    ]
+    static let signOutButtonText: String = "로그아웃"
 }

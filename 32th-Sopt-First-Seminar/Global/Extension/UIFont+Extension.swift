@@ -21,7 +21,7 @@ enum AppFontName: String {
 
 extension UIFont {
     static func font(_ style: AppFontName, ofSize size: CGFloat) -> UIFont {
-        return UIFont(name: style.rawValue, size: size)!
+        return UIFont(name: style.rawValue, size: size) ?? systemFont(ofSize: 15)
     }
     
     static var pretendardBlack: UIFont {
@@ -40,7 +40,7 @@ extension UIFont {
         return font(.pretendardLight, ofSize: 14)
     }
     static var pretendardMedium: UIFont {
-        return font(.pretendardMedium, ofSize: 23)
+        return font(.pretendardMedium, ofSize: 15)
     }
     static var pretendardRegular: UIFont {
         return font(.pretendardRegular, ofSize: 14)
