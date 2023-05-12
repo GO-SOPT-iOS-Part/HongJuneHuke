@@ -1,0 +1,8 @@
+//
+//  WeatherViewController.swift
+//  32th-Sopt-First-Seminar
+//
+//  Created by 홍준혁 on 2023/05/12.
+//
+
+import Foundation
