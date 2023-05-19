@@ -12,10 +12,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: windowScene)
-        self.window = window
-
-        let navigationController = UINavigationController()
+        self.window = UIWindow(windowScene: windowScene)
+//        let loginVC = ModuleFactory.shared.makeLoginViewController()
+        let weatherViewModel = WeatherViewModel()
+        let navigationController = UINavigationController(rootViewController: WeatherViewController(viewModel: weatherViewModel))
         self.window?.rootViewController = navigationController
 
         let coordinator = AppCoordinator(navigationController: navigationController)
